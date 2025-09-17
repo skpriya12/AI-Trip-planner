@@ -225,10 +225,10 @@ def generate_itinerary(user_id, origin, destination, trip_duration, start_date, 
         return output
 
     except Exception as e:
-        return f"⚠️ Could not generate itinerary. Error: {str(e)}"
+        return f"⚠ Could not generate itinerary. Error: {str(e)}"
 
 with gr.Blocks() as demo:
-    gr.Markdown("## 🧳 Travel Itinerary Planner with Airline Recommendations + Personalization (LLM + Vector DB)")
+    gr.Markdown("##  Travel Itinerary Planner with Airline Recommendations")
     with gr.Row():
         user_id = gr.Textbox(label="User ID", value="user123")
     with gr.Row():
