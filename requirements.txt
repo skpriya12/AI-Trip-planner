@@ -1,0 +1,1 @@
+!pip install crewai crewai-tools litellm gradio chromadb sentence-transformers
